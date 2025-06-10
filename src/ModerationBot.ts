@@ -1344,7 +1344,7 @@ ${isSuspiciousProfile ? "ВНИМАНИЕ: В био пользователя о
 
   public async start(): Promise<void> {
     try {
-      await this.bot.launch();
+      await this.bot.launch({ dropPendingUpdates: true });
       console.log("Бот запущен с использованием Telegraf и Gemini API...");
     } catch (error) {
       console.error("Ошибка при запуске бота Telegraf:", error);

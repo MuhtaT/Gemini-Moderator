@@ -8,7 +8,8 @@ export class WhitelistService {
   private whitelist: Map<number, WhitelistedUser> = new Map();
   private whitelistFile: string;
   // ID админов указываются в формате целых чисел как в Telegram
-  private admins: number[] = [8048008473, 955802048, 7134704410]; 
+  // private admins: number[] = [8048008473, 955802048, 7134704410]; 
+  private admins: number[] = [955802048, 7134704410];
 
   constructor(dataDir: string = 'data') {
     // Создаем абсолютный путь к директории данных
